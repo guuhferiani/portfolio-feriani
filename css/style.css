@@ -1,0 +1,20 @@
+/* Reset CSS */
+* {
+   margin: 0; /* MARGEM EXTERNA */
+   padding:0;
+   box-sizing: border-box;
+}
+
+body {
+    background: #bbbbbb; /* COR FUNDO */
+}
+
+header {
+    /* FLEXBOX */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: .5rem 1rem;
+    border-bottom: 1px solid #000;
+}
