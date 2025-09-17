@@ -12,9 +12,14 @@ body {
 header {
     /* FLEXBOX */
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+    justify-content: space-between; /* Eixo X */
+    align-items: center;  /* EIXO Y */
+    width: 100%;  /* Largura TOTAL p/ todos Dispositos */
     padding: .5rem 1rem;
     border-bottom: 1px solid #000;
+    position: fixed;
+}
+
+h1 {
+    padding-top: 1200px;
 }
