@@ -20,6 +20,50 @@ header {
     position: fixed;
 }
 
-h1 {
-    padding-top: 1200px;
+/* nav */
+.menu-desktop {
+    display: none;
+}
+
+/* ul */
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 1.2rem;
+}
+
+/* a href */
+.text-link {
+    text-decoration: none;
+}
+
+.menu-text {
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsividade */
+/* A partir de 768 */
+@media (min-width: 768px) {
+    .menu-desktop {
+        display: flex;
+    }
 }
