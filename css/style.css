@@ -79,7 +79,7 @@ header {
     position: fixed;
     top: 0;
     right: 0;
-    transform: translateX(); /* 100% */
+    transform: translateX(100%);
     background: var(--fundo-secundario);
     width: 75%;
     display: flex;
@@ -88,10 +88,21 @@ header {
     padding-top: 4rem;
     height: 100vh; /* viewport Height */ 
     border-left: 1px solid var(--borda);
-    
+    align-items: center;
+}
+
+.menu-mobile.active {
+    transform: translateX(0%);
 }
 
 
+/* UL da NAV Mobile */
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style: none;
+}
 
 
 /* Responsividade */
@@ -100,4 +111,11 @@ header {
     .menu-desktop {
         display: flex;
     }
+
+    .btn-menu-mobile {
+        display: none; /* Em telas Menu hamburger some */
+    }
+
+
+
 }
