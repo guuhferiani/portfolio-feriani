@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-theme="dark">
 
 <head>
   <meta charset="UTF-8" />
@@ -23,7 +23,7 @@
     <nav class="menu-desktop">
       <ul class="menu menu-principal">
         <li>
-          <a href="" class="text-link">
+          <a href="" class="menu-link">
             <span class="menu-text">
               Home
             </span>
@@ -31,7 +31,7 @@
         </li>
 
         <li>
-          <a href="" class="text-link">
+          <a href="" class="menu-link">
             <span class="menu-text">
               projetos
             </span>
@@ -39,7 +39,7 @@
         </li>
 
         <li>
-          <a href="" class="text-link">
+          <a href="" class="menu-link">
             <span class="menu-text">
               sobre
             </span>
@@ -47,7 +47,7 @@
         </li>
 
         <li>
-          <a href="" class="text-link">
+          <a href="" class="menu-link">
             <span class="menu-text">
               contAto
             </span>
@@ -64,18 +64,58 @@
     </div>
 
     <!-- TROCAR COR TEMA -->
-    <div>
-      <i class="bi bi-sun"></i> <!-- ICONE -->
+    <div class="header-toggle">
+
+      <i class="bi bi-sun" id="toggleTheme"> </i> <!-- ICONE -->
 
       <!-- botao lista Mobile -->
-      <button>
+      <button id="menuHamburger" class="btn-menu-mobile">
+        <!-- Menu Hamburger -->
         <i class="bi bi-list"></i>
       </button>
     </div>
 
   </header>
 
+  <!-- Menu Lista Mobile -->
+  <nav id="menuMobile" class="menu menu-mobile">
+    <ul class="menu-list">
+      <li>
+        <a href="" class="menu-link">
+          <span class="menu-text">
+            Home
+          </span>
+        </a>
+      </li>
 
+      <li>
+        <a href="" class="menu-link">
+          <span class="menu-text">
+            projetos
+          </span>
+        </a>
+      </li>
+
+      <li>
+        <a href="" class="menu-link">
+          <span class="menu-text">
+            sobre
+          </span>
+        </a>
+      </li>
+
+      <li>
+        <a href="" class="menu-link">
+          <span class="menu-text">
+            contAto
+          </span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- JS -->
+  <script src="js/script.js"></script>
 </body>
 
 </html>
