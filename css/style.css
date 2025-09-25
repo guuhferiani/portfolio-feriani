@@ -1,3 +1,35 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Gravitas+One&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200..700&display=swap');
+
+/* 
+
+Alan Sans
+font-family: "Alan Sans", sans-serif;
+
+Libre Baskerville
+font-family: "Libre Baskerville", serif;
+
+Gravitas One
+ font-family: "Gravitas One", serif;
+
+Oswald:
+font-family: "Oswald", sans-serif;
+
+*/
+
+
+
+/* Fontes */
+:root {
+  --fonte-titulo-h1: "Libre Baskerville", serif;
+  --fonte-textos: ;
+  --fonte-subtitulo-h2: ;
+  --fonte-subtitulo-h3: "Gravitas One", serif;
+
+}
+
+
+
 
 /* Color -> Dark */
 :root,
@@ -144,23 +176,39 @@ header {
   color: red;
 }
 
-
+/* h1 Base */
 h1 {
   font-size: 2.5rem;
   color: var(--cor-titulo);
+  font-family: var(--fonte-titulo-h3);
+  /* letter-spacing: ; */
+
 }
 
 p {
   color: var(--cor-textos);
 }
 
-
-
-
-section {
-  padding-top: 300px;
-  color: #fff;
+/* Reaproveitar para as seções */
+#home {
+  padding: 3.5rem 1rem;
 }
+
+/* FlexBox da HOME */
+#home {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+
+
+
 
 /* Responsividade */
 /* A partir de 768 voltar tela em flex */
@@ -168,7 +216,28 @@ section {
   .menu-desktop {
     display: flex;
   }
+  
   .btn-menu-mobile {
     display: none;
   }
+
+  h1 {
+    font-size: 5rem;
+  }
 }
+
+/* Telas 992 */
+@media (min-width: 992px) {
+  h1 {
+    font-size: 6rem;
+  }
+}
+
+/* Telas 1400px */
+@media (min-width: 1400px) {
+  h1 {
+    font-size: 7rem;
+  }
+}
+
+

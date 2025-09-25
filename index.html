@@ -1,89 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br" data-theme="dark">
-  <!-- Idioma -->
-  <head>
-    <meta charset="UTF-8" />
-    <!-- escala da tela -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Titulo da Pagina -->
-    <title>Feriani - Portfolio</title>
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css" />
+<!-- Idioma -->
 
-    <!-- Bootstrap Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
-    />
-    <!-- https://icons.getbootstrap.com/#install -->
-  </head>
-  <body>
-    <header>
-      <!-- MENU DESKTOP -->
-      <nav class="menu-desktop">
-        <ul class="menu menu-principal">
-          <li>
-            <a href="#home" class="menu-link active">
-              <span class="menu-text"> HOME </span>
-            </a>
-          </li>
-          <li>
-            <a href="#projetos" class="menu-link">
-              <span class="menu-text"> Projetos </span>
-            </a>
-          </li>
-          <li>
-            <a href="" class="menu-link">
-              <span class="menu-text"> SOBRE </span>
-            </a>
-          </li>
-          <li>
-            <a href="" class="menu-link">
-              <span class="menu-text"> CONTATO </span>
-            </a>
-          </li>
-        </ul>
-      </nav>
+<head>
+  <meta charset="UTF-8" />
+  <!-- escala da tela -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Titulo da Pagina -->
+  <title>Feriani - Portfolio</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
 
-      <!-- LOGO -->
-      <div>
-        <a href="#home">
-          <img src="logo.png" />
-        </a>
-      </div>
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+  <!-- https://icons.getbootstrap.com/#install -->
+</head>
 
-      <!-- ICONE COR TEMA -->
-      <div class="header-toggle">
-        <i class="bi bi-sun" id="toggleTheme"></i>
-
-        <button id="menuHamburger" class="btn-menu-mobile">
-          <!-- BOTAO LISTA MOBILE -->
-          <i class="bi bi-list"></i>
-          <!-- MENU HAMBURGER-->
-        </button>
-      </div>
-    </header>
-
-
-    <!-- MENU LISTA MOBILE -->
-    <nav id="menuMobile" class="menu menu-mobile">
-      <ul class="menu-list">
-        <li class="menu-item">
+<body>
+  <header>
+    <!-- MENU DESKTOP -->
+    <nav class="menu-desktop">
+      <ul class="menu menu-principal">
+        <li>
           <a href="#home" class="menu-link active">
             <span class="menu-text"> HOME </span>
           </a>
         </li>
-        <li class="menu-item">
+        <li>
           <a href="#projetos" class="menu-link">
             <span class="menu-text"> Projetos </span>
           </a>
         </li>
-        <li class="menu-item">
+        <li>
           <a href="" class="menu-link">
             <span class="menu-text"> SOBRE </span>
           </a>
         </li>
-        <li class="menu-item">
+        <li>
           <a href="" class="menu-link">
             <span class="menu-text"> CONTATO </span>
           </a>
@@ -91,50 +44,95 @@
       </ul>
     </nav>
 
-    <main id="home">
-      
-      <!-- Carrossel Bootstrap // Slides/Banner -->
-       <section id="carouselBootstrap">
-       </section>
+    <!-- LOGO -->
+    <div>
+      <a href="#home">
+        <img src="logo.png" />
+      </a>
+    </div>
 
-       <!-- Slogan -->
-       <div class="main-content">
-          
-        <h1>
-            Soluções Criativas & Desenvolvimento Front-End
-        </h1>
+    <!-- ICONE COR TEMA -->
+    <div class="header-toggle">
+      <i class="bi bi-sun" id="toggleTheme"></i>
 
-        <p>
-          Gustavo Feriani, São Paulo - SP, Dev e Instrutor. Front-End.
-        </p>
-        
-
-
-       </div>
+      <button id="menuHamburger" class="btn-menu-mobile">
+        <!-- BOTAO LISTA MOBILE -->
+        <i class="bi bi-list"></i>
+        <!-- MENU HAMBURGER-->
+      </button>
+    </div>
+  </header>
 
 
-    </main>
-    
-    <!-- SERVIÇOS -->
-    <section id="projetos" class="projetos">
-      Projetos
+  <!-- MENU LISTA MOBILE -->
+  <nav id="menuMobile" class="menu menu-mobile">
+    <ul class="menu-list">
+      <li class="menu-item">
+        <a href="#home" class="menu-link active">
+          <span class="menu-text"> HOME </span>
+        </a>
+      </li>
+      <li class="menu-item">
+        <a href="#projetos" class="menu-link">
+          <span class="menu-text"> Projetos </span>
+        </a>
+      </li>
+      <li class="menu-item">
+        <a href="" class="menu-link">
+          <span class="menu-text"> SOBRE </span>
+        </a>
+      </li>
+      <li class="menu-item">
+        <a href="" class="menu-link">
+          <span class="menu-text"> CONTATO </span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  
+  <main id="home">
+
+    <!-- Carrossel Bootstrap // Slides/Banner -->
+    <section id="carouselBootstrap">
     </section>
 
-    <section id="sobre" class="sobre">
-      Sobre
-    </section>
+    <!-- Slogan -->
+    <div class="main-content">
 
-    <section id="contato" class="contato">
-      Contato
-    </section>
+      <h1>
+        Soluções Criativas & Desenvolvimento Front-End
+      </h1>
 
-    <footer>
-      <p> &copy; 2025. </p>
-    </footer>
+      <p>
+        Gustavo Feriani, São Paulo - SP, Dev e Instrutor Front-End.
+      </p>
 
-    <!-- JS -->
-    <script src="js/script.js"></script>
-  </body>
+    </div>
+
+  </main>
+
+  <!-- SERVIÇOS -->
+  <section id="projetos" class="projetos">
+    Projetos
+  </section>
+
+  <section id="sobre" class="sobre">
+    Sobre
+  </section>
+
+  <section id="contato" class="contato">
+    Contato
+  </section>
+
+  <footer>
+    <p> &copy; 2025. </p>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/script.js"></script>
+</body>
+
 </html>
 
 <!-- ALT + SHIFT + A = Comentario -->
