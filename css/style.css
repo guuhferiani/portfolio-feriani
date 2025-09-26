@@ -22,13 +22,10 @@ font-family: "Oswald", sans-serif;
 /* Fontes */
 :root {
   --fonte-titulo-h1: "Libre Baskerville", serif;
-  --fonte-textos: ;
+  --fonte-textos: "Alan Sans", sans-serif;
   --fonte-subtitulo-h2: ;
   --fonte-subtitulo-h3: "Gravitas One", serif;
-
 }
-
-
 
 
 /* Color -> Dark */
@@ -37,27 +34,32 @@ font-family: "Oswald", sans-serif;
   --cor-fundo: #111217;
   --cor-fundo-secundario:#28292E;
 
-  --cor-text-menu-link: #ffffff;
-  --cor-border-botton: #ffffff;
-  --cor-icon-theme: #ffffff;
+  --cor-text-menu-link: #7b7b7b;
+  --cor-border-botton: #f0f0f0;
+  --cor-icon-theme: #a0a0a0;
 
   --cor-titulo: #eaeaea;
   --cor-textos: #cacaca;
 
+  --hover-link: #f0f0f0;
+  --cor-link: #626262;
+
 }
 
-/* Color -> Ligth */
+/* Color -> Light */
 :root,
 :root[data-theme="light"] {
-  --cor-fundo: #cacaca;
-  --cor-fundo-secundario:#eeeeee;
-  --cor-text-menu-link: #000000;
-  --cor-borda: #000000;
-  --cor-icon-theme: #000000;
+  --cor-fundo: #f0f0f0;
+  --cor-fundo-secundario:#c7c8c9;
+  --cor-text-menu-link: #b3b3b3;
+  --cor-borda: #111217;
+  --cor-icon-theme: #808080;
 
   --cor-titulo: #111217;
   --cor-textos: #111217;
   
+  --hover-link: #111217;
+  --cor-link: #a3a2a2;
 
 }
 
@@ -110,15 +112,22 @@ header {
   text-decoration: none;
 }
 
+/* Span dentro do A HREF */
 .menu-text {
   text-transform: uppercase;
   color: var(--cor-text-menu-link);
+  font-family: var(--fonte-textos);
 }
 
+/* Icone Puro */
 #toggleTheme {
-  color: var(--cor-icon-theme);
+  color: #a3a2a2;
   font-size: 1.5rem;
   cursor: pointer; /* seta-mouse */
+}
+
+#toggleTheme:hover {
+  color: var(--hover-link);
 }
 
 .menu-mobile {
@@ -173,7 +182,7 @@ header {
 /* Herança */
 .menu-link.active .menu-text,
 .menu-link:hover .menu-text {
-  color: red;
+  color: var(--hover-link);
 }
 
 /* h1 Base */
@@ -182,7 +191,6 @@ h1 {
   color: var(--cor-titulo);
   font-family: var(--fonte-titulo-h3);
   /* letter-spacing: ; */
-
 }
 
 p {
@@ -205,6 +213,20 @@ p {
   flex-direction: column;
   gap: 2rem;
 }
+
+/* HERANÇA */
+.menu-social i {
+  color: var(--cor-link);
+  font-size: 1.5rem;
+}
+
+.menu-social i:hover {
+  color: var(--hover-link);
+
+}
+
+
+
 
 
 
