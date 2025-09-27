@@ -21,8 +21,9 @@ font-family: "Oswald", sans-serif;
 
 /* Fontes */
 :root {
-  --fonte-titulo-h1: "Libre Baskerville", serif;
+
   --fonte-textos: "Alan Sans", sans-serif;
+  --fonte-titulo-h1: "Libre Baskerville", serif;
   --fonte-subtitulo-h2: ;
   --fonte-subtitulo-h3: "Gravitas One", serif;
 }
@@ -63,6 +64,10 @@ font-family: "Oswald", sans-serif;
 
 }
 
+html[data-theme="light"] .logo {
+  filter: invert(1);
+}
+
 /* Aparencia/ Efeito Barra Rolagem */
 html {
   scroll-behavior: smooth;
@@ -93,6 +98,11 @@ header {
   position: fixed;
   z-index: 9999; /* CAMADAS */
   background: var(--cor-fundo);
+}
+
+.logo {
+  width: 5rem; /* Comprimento */
+  height: auto;  /* Altura */
 }
 
 /* nav */
@@ -245,6 +255,10 @@ p {
 
   h1 {
     font-size: 5rem;
+  }
+
+  .header-logo {
+    min-width: 30%;
   }
 }
 
