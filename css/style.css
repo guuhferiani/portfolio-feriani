@@ -24,7 +24,7 @@ font-family: "Oswald", sans-serif;
 
   --fonte-textos: "Alan Sans", sans-serif;
   --fonte-titulo-h1: "Libre Baskerville", serif;
-  --fonte-subtitulo-h2: ;
+  --fonte-subtitulo-h2: "Oswald", sans-serif;
   --fonte-subtitulo-h3: "Gravitas One", serif;
 }
 
@@ -36,7 +36,7 @@ font-family: "Oswald", sans-serif;
   --cor-fundo-secundario:#28292E;
 
   --cor-text-menu-link: #7b7b7b;
-  --cor-border-botton: #f0f0f0;
+  --cor-borda: #f0f0f0ae;
   --cor-icon-theme: #a0a0a0;
 
   --cor-titulo: #eaeaea;
@@ -85,6 +85,7 @@ html {
 
 body {
   background: var(--cor-fundo);
+  color: var(--cor-textos);
 }
 
 header {
@@ -150,7 +151,7 @@ header {
   display: flex;
   flex-direction: column;
   max-width: 320px;
-  padding-top: 4rem;
+  padding-top: 6rem;
   height: 100vh; /* Viewport Height */
   border-left: 1px solid var(--cor-borda);
   align-items: center;
@@ -208,7 +209,10 @@ p {
 }
 
 /* Reaproveitar para as seções */
-#home {
+#home, 
+.projetos,
+.sobre,
+.contato {
   padding: 3.5rem 1rem;
 }
 
@@ -216,6 +220,7 @@ p {
 #home {
   display: flex;
   flex-direction: column;
+  gap: 2rem;
 }
 
 .main-content {
@@ -235,16 +240,48 @@ p {
 
 }
 
+.descricao-video {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 6.25rem 1rem 2rem;
+  background: #626262;
+  margin-top: -7.5rem;
+}
 
+.video iframe {
+  aspect-ratio: 16/9;
+  /* width: 100%; */
+}
 
-
+.descricao-video h2 {
+  font-size: 2rem;
+  text-transform: normal;
+  letter-spacing: 2px;
+  font-family: var(--fonte-subtitulo-h2);
+  text-align: center;
+  margin-top: -1rem;
+} 
 
 
 
 
 /* Responsividade */
+/* telas Até 768px */
+@media (max-width: 768px) {
+  #home {
+    padding-top: 6rem;
+  }
+}
+
 /* A partir de 768 voltar tela em flex */
 @media (min-width: 768px) {
+  header {
+    padding: 1rem 6rem;
+  }
+
   .menu-desktop {
     display: flex;
   }
@@ -259,6 +296,21 @@ p {
 
   .header-logo {
     min-width: 30%;
+  }
+  #home, 
+  .projetos, 
+  .sobre {
+    padding: 8rem 6rem 4rem 6rem;
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .descricao-video {
+    padding: 6.25rem 6rem 2rem 6rem;
   }
 }
 
