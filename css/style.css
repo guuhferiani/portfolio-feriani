@@ -204,6 +204,15 @@ h1 {
   /* letter-spacing: ; */
 }
 
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-family: var(--fonte-subtitulo-h2);
+  /* font-weight: ; */
+  /*   letter-spacing: ; */
+  /* color: ; */
+}
+
 p {
   color: var(--cor-textos);
 }
@@ -266,6 +275,49 @@ p {
 } 
 
 
+/* Projetos */
+
+.projetos {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.projetos-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.projeto-card {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.img-card {
+  width: 100%;
+  border-radius: 3rem;
+ /*  box-shadow: 4px 7px 15px 1px #e8e8e8; */
+  pointer-events: none;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+
+}
+
+.card-list {
+  list-style: none;
+}
+
+
 
 
 /* Responsividade */
@@ -319,12 +371,26 @@ p {
   h1 {
     font-size: 6rem;
   }
+
+  .projeto-card {
+    flex-direction: row;
+  }
+
+  .img-card {
+    width: 55%;
+  }
+
 }
 
 /* Telas 1400px */
 @media (min-width: 1400px) {
   h1 {
     font-size: 7rem;
+  }
+
+  .descricao-video h2 {
+    font-size: 4rem;
+    text-align: start;
   }
 }
 
