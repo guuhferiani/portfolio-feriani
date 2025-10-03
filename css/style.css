@@ -211,10 +211,19 @@ h2 {
   /* font-weight: ; */
   /*   letter-spacing: ; */
   /* color: ; */
+  text-transform: uppercase;
 }
 
-p {
-  color: var(--cor-textos);
+h3 {
+  font-size: 1.55rem;
+  font-family: var(--fonte-subtitulo-h3);
+  text-transform: uppercase;
+}
+
+p,
+span, 
+li {
+    font-size: 1.5rem;
 }
 
 /* Reaproveitar para as seções */
@@ -317,6 +326,24 @@ p {
   list-style: none;
 }
 
+/* h3 do projeto */
+.card-title {
+  color: #1d85ee;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.card-list .card-item i {
+  margin-right: 15px;
+}
+
+.card-list .card-item {
+  margin-bottom: 10px;
+}
+
+.card-list .card-item:hover i {
+  color: #1d85ee;
+}
 
 
 
@@ -346,6 +373,10 @@ p {
     font-size: 5rem;
   }
 
+  h2 {
+    font-size: 3rem;
+  }
+
   .header-logo {
     min-width: 30%;
   }
@@ -371,7 +402,7 @@ p {
   h1 {
     font-size: 6rem;
   }
-
+  
   .projeto-card {
     flex-direction: row;
   }
@@ -379,8 +410,23 @@ p {
   .img-card {
     width: 55%;
   }
+  
+  .card-reverse {
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
 
 }
+
+@media (min-width: 1200px) {
+  h2 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 2.5rem;
+  }
+}
+
 
 /* Telas 1400px */
 @media (min-width: 1400px) {
@@ -388,10 +434,20 @@ p {
     font-size: 7rem;
   }
 
+  h2 {
+    font-size: 5rem;
+  }
+
+  h3 {
+    font-size: 3.5rem;
+  }
+
   .descricao-video h2 {
     font-size: 4rem;
     text-align: start;
   }
+
+
 }
 
 
