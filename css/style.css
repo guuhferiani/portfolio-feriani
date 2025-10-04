@@ -216,7 +216,7 @@ h2 {
 
 h3 {
   font-size: 1.55rem;
-  font-family: var(--fonte-subtitulo-h3);
+  /* font-family: var(--fonte-subtitulo-h3); */
   text-transform: uppercase;
 }
 
@@ -345,6 +345,74 @@ li {
   color: #1d85ee;
 }
 
+/* Sobre */
+.sobre {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sobre-content1,
+.sobre-content2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.sobre-avatar {
+  width: 100%;
+  border-radius: 50rem;
+}
+
+.sobre-descricao {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1.5rem;
+}
+
+.sobre-icones, 
+.sobre-skills {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.sobre-icones i, 
+.sobre-skills i {
+  font-size: 1.5rem;
+}
+
+/* Content - 2 */
+.sobre-content2 .col1, 
+.sobre-content2 .col2 {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  gap: 2rem;
+}
+
+.sobre-content2 .col1 .formacao,
+.sobre-content2 .col1 .exp {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+/* ACCORDION */
+.accordion-body {
+  display: none;
+}
+
+.accordion-item.active .accordion-body {
+  display: flex;
+}
+
+.accordion-item.active .bi-caret-down-fill {
+  transform: rotate(180deg);
+}
 
 
 /* Responsividade */
@@ -414,6 +482,15 @@ li {
   .card-reverse {
     flex-direction: row-reverse;
     justify-content: center;
+  }
+
+  .sobre-content1,
+  .sobre-content2 {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4rem;
   }
 
 }
